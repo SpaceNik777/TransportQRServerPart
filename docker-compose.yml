@@ -1,0 +1,12 @@
+version: "3.6"
+
+services:
+  transportqrapi:
+    build: ./
+    container_name: transportqr_api
+    volumes:
+      - ./:/transportqr_api
+    ports:
+      - 8080:8080
+    expose:
+      - 8080
